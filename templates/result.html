@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calories Prediction Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Dự đoán lượng Calo tiêu thụ của bạn</h1>
+        <p>Dự đoán lượng calo bạn sẽ tiêu thụ là: <strong>{{ prediction }}</strong> kcal.</p>
+        <a href="{{ url_for('home') }}">Trở về trang chính</a>
+    </div>
+</body>
+</html>
